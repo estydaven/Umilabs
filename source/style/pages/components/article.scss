@@ -1,0 +1,23 @@
+.content{
+    padding: 80px 0;
+  
+    @include phone{
+      padding: 40px 0;
+    }
+  }
+  .content__wrapper{
+    width: 49%;
+    margin: 0 auto;
+  
+    @include desktop{
+      width: 68%;
+    }
+    @include phone{
+      width: 90%;
+    }
+  }
+  .content__text{
+      line-height: 26px;    
+      padding-bottom: 25px;
+      color: #4E4D53;
+  }

@@ -1,0 +1,154 @@
+.footer{
+    background: #161616;
+    padding: 100px 0 120px 0;
+    color: #fff;
+  
+    @include phone{
+      padding: 40px 0;
+    }
+  }
+  .container-footer__title{
+    font-family: 'DIN Pro';
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    padding-bottom: 60px;
+    color: #FFFFFF;
+  
+    @include phone{
+      font-size: 38px;
+    }
+    @include phone320{
+      padding-bottom: 20px;
+      font-size: 30px;
+    }
+  }
+  .container-footer{
+    width: 49%;
+    margin: 0 auto;
+  
+    @include laptop{
+      width: 70%;
+    }
+    @include tablet{
+      width: 80%;
+    }
+    @include phone420{
+      width: 90%;
+    }
+  }
+  .form-input{
+    position: relative;
+    display: flex;
+  }
+  .number-text{
+    width: 64px;
+    height: 64px;
+    padding-top: 19px;  
+    border: 1px solid rgba(255, 255, 255, .23);
+    border-radius: 32px;
+    color: #F47821;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+  
+    @include phone420{
+      width: 40px;
+      height: 40px;
+      padding-top: 5px;
+    }
+  }
+  .form-input__text{
+    font-family: 'DIN Pro';
+    line-height: 25px;
+    letter-spacing: -0.01em;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+  .form-input__content{
+    padding-left: 28px;
+    width: 94%;
+  }
+  .form-input__input{
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;    
+    outline: none;
+    width: 100%;
+    padding-bottom: 12px;
+    margin-bottom: 46px;
+    border-bottom: 2px solid rgba(247, 248, 250, .2);
+  
+    @include phone{
+      font-size: 18px;
+    }
+  }
+  .button{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    border: none;
+    font-family: 'Gilroy';
+    line-height: normal;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #F47821;
+    border-radius: 111px;
+    display: block;
+    padding: 20px;
+    width: 74%;
+    margin: 0 auto;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transition: .2s ease-out;
+  
+    &:hover {
+      color: #fefefe;
+      -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+      box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);      
+    }
+  
+    @include phone{
+      width: 90%;
+    }
+  }
+  .bounce-to-right {
+    position: relative;
+    -webkit-transition: color 500ms;    
+    transition: color 500ms;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    &:before {
+      content: "";
+      position: absolute;
+      border-radius: 111px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: -1;
+      background: #F47821;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      -webkit-transition: 300ms ease-out;
+      transition: 300ms ease-out;
+    }
+    &:hover:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+  }
+  .error{
+		color: red;
+	}  

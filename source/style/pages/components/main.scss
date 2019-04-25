@@ -1,0 +1,81 @@
+.main{
+    background: #F7F5FA;
+    padding-bottom: 80px;
+  
+    @include phone{
+      padding-bottom: 40px;
+    }
+  }
+  .wrapper-main{
+    width: 61.5%;
+    margin: 0 auto;
+  
+    @include bigdesktop{    
+        width: 70%;      
+    }
+    @include desktop{
+      width: 80%;
+    }
+    @include laptop{
+      width: 90%;
+    }
+    @include phone420{
+      width: 95%;
+    }
+  }
+  .container-main{
+    padding: 50px 60px 60px 60px;
+    background: #fff;
+    margin-top: -90px;
+    width: 100%;
+    position: relative;
+  
+    @include phone{
+      padding: 25px;
+    }
+  }
+  .container-main__block{
+    display: flex;
+    
+    &_padding{
+      padding-bottom: 110px;
+  
+      @include phone{
+        padding-bottom: 0;
+      }
+    }
+  
+    @include phone{
+      flex-direction: column;
+    }
+  }
+  .main-block{
+  
+    @include phone{
+      padding-bottom: 20px;
+    }
+  }
+  .main-block__title{
+    font-family: 'DIN Pro';
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #F47821;
+  }
+  .main-block__text{
+    font-family: 'DIN Pro';
+    font-size: 24px;
+    padding: 12px 80px 0 0;
+    line-height: normal;
+    letter-spacing: -0.03em;
+    color: #222222;
+  
+    @include phone{
+      font-size: 21px;
+      padding: 0;
+    }
+    @include phone320{
+      font-size: 18px;
+    }
+  }

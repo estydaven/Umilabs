@@ -1,0 +1,31 @@
+section.footer
+    .container-footer
+        h1.container-footer__title Теперь расскажите о себе
+        form.form#form(action="", method="POST")
+            .form-wrapper
+                .form-input
+                    .form-input__number
+                        p.number-text   1
+                    .form-input__content    
+                        p.form-input__text Фамилия и имя
+                        input.form-input__input(type='text', required='', placeholder='Лайковская Валентина', name="name")
+                .form-input
+                    .form-input__number
+                        p.number-text   2
+                    .form-input__content
+                        p.form-input__text Электронная почта
+                        input.form-input__input(type='email', required='', placeholder='esetnod1111@gmail.com', name="email")
+                .form-input
+                    .form-input__number
+                        p.number-text   3
+                    .form-input__content
+                        p.form-input__text Телефон
+                        input.form-input__input(type='tel', required='', placeholder='+375(29) 5823133', name="tel")
+                .form-input
+                    .form-input__number
+                        p.number-text   4
+                    .form-input__content
+                        p.form-input__text Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?
+                        textarea.form-input__input(type='text', placeholder='Свой проект по созданию универсальной инфраструктуры строительства', name="desc")
+                .form-button
+                    button.button.bounce-to-right(type='submit', name='submit', value='Submit') Отправить
